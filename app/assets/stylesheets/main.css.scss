@@ -1,0 +1,46 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+h1{
+	color:black;
+	display:block;
+	letter-spacing:-0.1px;
+	font-family:Georgia;
+	font-weight:bold;
+	text-align:center;
+	
+}
+
+html{
+	border-top:solid black;
+}
+
+#container{
+	margin:0 auto;
+	width: 700px;
+}
+
+#header {
+	border-bottom:solid black;	
+
+}
+
+#image{
+	margin-bottom:4px;
+}
+
+p{
+	color:#cc3300;
+	font-weight:normal;
+	font-size:21px;
+}
+
+img{
+	width:700px;
+	height:500px;
+	border-bottom:1px gray;	
+
+
+}
