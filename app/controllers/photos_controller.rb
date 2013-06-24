@@ -6,7 +6,8 @@ class PhotosController < ApplicationController
 	end
 
 	def show 
-		respond_with Photo.find(params[:id])
+		@photo = Photo.find(params[:id])
+		
 	end
 
 	def create

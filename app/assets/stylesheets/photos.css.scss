@@ -2,6 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-p{
-	font-color:#cc3300;
+
+img{
+	width:700px;
+	height:500px;
+	border-bottom:1px gray;	
+	text-align:center;
+}
+
+#containers{
+	margin:0 auto;
+	width: 700px;
+}
+
+#headers {
+	border-bottom:solid black;
+	margin-bottom:5px;	
+	
+}
+
+#home {
+	width:30px;
+	height:30px;
+	float:right;
+}
+
+#share_button{
+	width:30px;
+	height:30px;
+	float:right;
 }

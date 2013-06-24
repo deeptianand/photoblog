@@ -2,11 +2,10 @@
 <div id="header">
 <h1>S H U T T E R   B U G</h1>
 </div>
-
 <% for photo in @photos.models:%>
 <div id="image">
 <p> <%=photo.get('caption')%></p>
-<img src="<%= photo.get('url') %>">
+<a href="/api/photos/<%=photo.get('id')%>"><img src="<%= photo.get('url') %>"></a>
 
 <br><br>
 <hr><hr>
