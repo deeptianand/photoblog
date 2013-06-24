@@ -5,7 +5,7 @@
 <% for photo in @photos.models:%>
 <div id="image">
 <p> <%=photo.get('caption')%></p>
-<a href="/api/photos/<%=photo.get('id')%>"><img src="<%= photo.get('url') %>"></a>
+<a href="/api/photos/<%=photo.get('id')%>"><img title="Click to share" src="<%= photo.get('url') %>"></a>
 
 <br><br>
 <hr><hr>

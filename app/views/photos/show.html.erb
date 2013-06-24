@@ -3,41 +3,21 @@
 <h1>S H U T T E R   B U G</h1>
 </div>
 <a href="/"><img id="home" src="/assets/home.png"></a>
-<img id="share_button" src="/assets/share_button.png">
+
 <!-- twitter -->
-<a href="https://twitter.com/share" class="twitter-share-button" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none">Tweet</a>
+<a href="https://twitter.com/share"  data-related="jasoncosta" data-lang="en" data-size="large" target= "_blank" data-count="none">
+<img class="twitter-share-button" src="/assets/tweet.png"></a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <!-- facebook -->
-<div id="fb-root"></div>
-<script>
-window.fbAsyncInit = function() {
-FB.init({appId: '194132720744581', status: true, cookie: true,
-xfbml: true});
-};
-(function() {
-var e = document.createElement('script'); e.async = true;
-e.src = document.location.protocol +
-'//connect.facebook.net/en_US/all.js';
-document.getElementById('fb-root').appendChild(e);
-}());
-
-$(document).ready(function(){
-$('#share_button').click(function(e){
-e.preventDefault();
-FB.ui(
-{
-method: 'feed',
-name: 'This is the content of the "name" field.',
-link: ' http://www.hyperarts.com/',
-picture: 'http://www.hyperarts.com/external-xfbml/share-image.gif',
-caption: 'This is the content of the "caption" field.',
-description: 'This is the content of the "description" field, below the caption.',
-message: ''
-});
-});
-});
-</script>
-
+<a href="#" 
+  onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+      'fb-share-dialog', 
+      'width=626,height=436'); 
+    return false;">
+  <img id="share_button" src="/assets/share_button.png">
+</a>
 <p> <%=@photo.caption%></p>
 <img src="<%=@photo.url%>"/>
 
